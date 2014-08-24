@@ -1,6 +1,6 @@
 package com.kirkiplaid.sycraft;
 
-import com.kirkiplaid.sycraft.configuration.ConfigurationHandler;
+import com.kirkiplaid.sycraft.handler.ConfigurationHandler;
 import com.kirkiplaid.sycraft.proxy.IProxy;
 import com.kirkiplaid.sycraft.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -13,7 +13,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  * Created by ItsKirkiplaid on 8/24/2014.
  */
 
-@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version= Reference.VERSION)
+@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version= Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class SyCraft {
 
 
