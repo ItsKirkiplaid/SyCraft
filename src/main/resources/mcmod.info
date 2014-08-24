@@ -1,0 +1,19 @@
+[
+{
+  "modid": "SyCraft",
+  "name": "SyCraft",
+  "description": "A mod that adds Blocks and items to create a Unique Style for Everyone...:D",
+  "version": "1.0",
+  "mcversion": "1.7.2",
+  "logoFile": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ItsKirkiplaid"],
+  "credits": "I would like to thank Everyone for the Support of this Mod!",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+
+
