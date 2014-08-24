@@ -1,8 +1,11 @@
 package com.kirkiplaid.sycraft;
 
+import com.kirkiplaid.sycraft.Init.ModItems;
 import com.kirkiplaid.sycraft.handler.ConfigurationHandler;
 import com.kirkiplaid.sycraft.proxy.IProxy;
 import com.kirkiplaid.sycraft.reference.Reference;
+import com.kirkiplaid.sycraft.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -27,11 +30,16 @@ public class SyCraft {
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        LogHelper.info("Pre-Init Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
+        LogHelper.info("Init Complete!");
 
     }
 
@@ -39,6 +47,7 @@ public class SyCraft {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+        LogHelper.info("Post-Init Complete!");
 
     }
 

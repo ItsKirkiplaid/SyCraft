@@ -1,0 +1,8 @@
+Wheat Stages
+
+- Green Infused Bale ::: Seeds Surrounding - HayBale
+- Rust Infused Bale ::: Iron/Coal Surounding- Green Infused Bale
+- Rich Infused Bale ::: Gold/1,Diamond Surrounding - Rust Infused Bale
+- Seared Bale ::: Smelt Rich Bale
+- Fertile Bale ::: Seared Bale and Water Bucket
+- Fertile Soil ::: 4 Fertile Bale and 1 Dirt
