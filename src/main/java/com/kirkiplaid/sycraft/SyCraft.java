@@ -1,5 +1,6 @@
 package com.kirkiplaid.sycraft;
 
+import com.kirkiplaid.sycraft.configuration.ConfigurationHandler;
 import com.kirkiplaid.sycraft.proxy.IProxy;
 import com.kirkiplaid.sycraft.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -25,7 +26,7 @@ public class SyCraft {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
