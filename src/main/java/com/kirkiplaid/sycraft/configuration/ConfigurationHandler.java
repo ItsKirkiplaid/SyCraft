@@ -14,9 +14,14 @@ public class ConfigurationHandler {
 
         Configuration configuration = new Configuration(configFile);
 
+        boolean configValue = false;
         try
         {
             configuration.load();
+
+           configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true, "This is an Example Config Value").getBoolean(true);
+           configValue = configuration.get("Example Category", "configValue", true, "This is an Example Config Value 2").getBoolean(true);
+
         }
         catch (Exception e)
         {
@@ -26,5 +31,6 @@ public class ConfigurationHandler {
             configuration.save();
         }
 
+        System.out.println(configValue);
     }
 }
