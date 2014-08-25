@@ -1,5 +1,6 @@
 package com.kirkiplaid.sycraft.item;
 
+import com.kirkiplaid.sycraft.creativetab.CreativeTabSC;
 import com.kirkiplaid.sycraft.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,6 +16,7 @@ public class ItemSC extends Item{
     public ItemSC() {
 
         super();
+        this.setCreativeTab(CreativeTabSC.SC_TAB);
 
     }
 

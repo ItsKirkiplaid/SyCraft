@@ -1,0 +1,12 @@
+item.sycraft:GreenWheat.name= Green Wheat
+item.sycraft:RustWheat.name=Rust Infused Wheat
+item.sycraft:RichWheat.name= Rich Fertile Wheat
+
+tile.sycraft:GreenBale.name=Green Bale
+tile.sycraft:RustBale.name=Rust Infused Bale
+tile.sycraft:RichBale.name=Rich Fertile Bale
+tile.sycraft:FertileBale.name=Fertile Bale
+tile.sycraft:SearedBale.name=Seared Bale
+tile.sycraft:FertileSoil.name=Fertile Soil
+
+itemGroup.sycraft= SyCraft

@@ -1,5 +1,6 @@
 package com.kirkiplaid.sycraft;
 
+import com.kirkiplaid.sycraft.Init.ModBlocks;
 import com.kirkiplaid.sycraft.Init.ModItems;
 import com.kirkiplaid.sycraft.handler.ConfigurationHandler;
 import com.kirkiplaid.sycraft.proxy.IProxy;
@@ -34,6 +35,8 @@ public class SyCraft {
         LogHelper.info("Pre-Init Complete!");
 
         ModItems.init();
+
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
